@@ -1,0 +1,22 @@
+/*== Breadcrumbs ==*/
+ol.breadcrumb {
+    background: none;
+    margin:0;
+    padding: .75rem 0;
+    & li{
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 25px;
+    	a {
+		  color:$color-white;
+		}
+    }
+    & .breadcrumb-item.active{
+		color:$color-white;
+    }
+    & .breadcrumb-item+.breadcrumb-item::before{
+    	content:url(../images/breadcrumb_arrow.svg);
+        color:$color-white;
+    }
+}
+/*== End Breadcrumbs ==*/

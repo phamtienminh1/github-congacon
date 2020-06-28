@@ -1,0 +1,20 @@
+/*== Our Video ==*/
+.our_video_main{
+	.container{
+        position:relative;
+        padding:68px 15px 129px;
+        height: 100%;
+        .icon_round{
+            top: 75px;
+            height: calc(100% - 129px - 68px);
+            &:before{
+                top:0;
+            }
+        }
+    }
+    .title_home h3{
+        font-size: 48px;
+        line-height: 50px;
+    }
+}
+/*== End Our Video ==*/

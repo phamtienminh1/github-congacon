@@ -1,0 +1,72 @@
+/*== Recruit ==*/
+.recruit_page_main {
+    max-width: 830px;
+    margin: auto;
+}
+.recruit_box{
+	&_item {
+	    background: #1C1C1C;
+	    padding: 15px;
+	    display: flex;
+	    & .products_box_cate_info{
+	    	padding:0;
+	    }
+	}
+	&_info {
+	    flex: 1;
+	    & h2 , & h2 a,& h1{
+			font-weight: bold;
+			font-size: 14px;
+			line-height: 18px;
+			color: $color-white;
+			margin: 0 0 15px;
+			height: 35px;
+			overflow: hidden;
+			display: -webkit-box;
+			-webkit-line-clamp: 2;
+			-webkit-box-orient: vertical;
+		}
+		& h2 a:hover{
+			color:$base-hover-color;
+		}
+		p {
+		    font-size: 14px;
+		    line-height: 18px;	
+		    color: $color-white;
+		}
+	}
+	&_img {
+	    width: 121px;
+	    height: 148px;
+	    margin: 0 14px 0 0;
+	}
+}
+/*== Recruit Details ==*/
+.recruit_details{
+	&_main {
+	    padding: 35px 0 245px;
+	}
+	&_contact {
+	    background: #1C1C1C;
+	    padding: 22px 13px;
+	    color:$color-white;
+	    font-size: 14px;
+	    line-height: 26px;
+	    h3 {
+		    font-weight: bold;
+		    font-size: 14px;
+		    line-height: 26px;
+		    margin: 0 0 10px;
+		}
+	}
+	&_content {
+	    font-size: 14px;
+	    line-height: 26px;
+	    color: $color-white;
+	    h3 {
+		    font-weight: bold;
+		    font-size: 14px;
+		    line-height: 26px;
+		}
+	}
+}

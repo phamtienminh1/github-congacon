@@ -1,0 +1,185 @@
+body{
+	font-family:$body-font-family;
+	overflow-x:hidden;
+	background:$bg-color-black;
+}
+/*== Fix Moz ==*/
+@-moz-document url-prefix(){
+}
+/*== Fix Moz ==*/
+
+/*== Hover link ==*/
+a:hover {
+	@include hover_text($base-hover-color,none);
+}
+/*== Container ==*/
+.content_main {
+    top: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    z-index: 3;
+    background:$bg-color-black;
+}
+.content_inside_main{
+	background: $color-black;
+	position: relative;
+	&:before{
+		content:"";
+		background: url(../images/bg_page_inside.png) top right/contain no-repeat;
+		height: 100%;
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	    display: block;
+	    width: 600px;
+	}
+}
+/*== End Container ==*/
+
+/*== Custom ding ==*/
+.icon_dinh{
+	&_ban{
+		width: 726px;
+		height: 303px;
+		margin: -11px 0 0 322px;
+		overflow: hidden;
+		position: relative;
+		z-index: 1;
+	}
+	&_top{
+	    position: absolute;
+	    left: 767px;
+	    top: 36px;
+	    z-index:3;
+	    width: 17px;
+	    display: block;
+	}
+	&_bottom{
+	    position: absolute;
+		bottom: 0;
+		left: 767px;
+	    width: 17px;
+	    display:none;
+	}
+	&_move{
+		img {
+		    margin-left: 753px;
+		    z-index: 1;
+		    position: fixed;
+		    width: 17px;
+		    top: 117px;
+		    display: none;
+		}
+	}
+}
+.icon_round {
+    content: "";
+    width: 1px;
+    height: 450px;
+    border-left: 2px dashed $base-hover-background-2;
+    top: 34px;
+    left: 775px;
+    position: absolute;
+    &:before {
+	    content: "";
+	    width: 16px;
+	    height: 16px;
+	    background: $base-hover-background-2;
+		left: -9px;
+		border-radius: 50%;
+		position: absolute;
+		top: -14px;
+	}
+	&:after {
+	    content: "";
+	    width: 16px;
+	    height: 16px;
+	    bottom: 0;
+	    background: $base-hover-background-2;
+	    right: -7px;
+	    border-radius: 50%;
+	    position: absolute;
+	}
+}
+/*== End Custom ding ==*/
+	
+/*== Partners ==*/
+.partners_main {
+    &_img {
+		width: 122px;
+		height: 65px;
+	    margin: 0 0 20px;
+	}
+}
+/*== End Partners ==*/
+
+/*== WHAT MAKE US DIFFERENT ==*/
+.what_make_us_df_main{
+    .container{
+        position:relative;
+        padding:70px 15px 70px;
+    }
+	&_img {
+	    width: 80px;
+	    height: 80px;
+	    margin: 0 auto 20px;
+	}
+	&_name p {
+	    font-weight: 500;
+	    font-size: 16px;
+	    line-height: 20px;
+	    text-align: center;
+	    color:$color-white;
+		max-width: 200px;
+		margin: auto;
+	}
+	.line_fixed{
+		span{
+			height: 465px;
+		}
+	}
+}
+/*== End WHAT MAKE US DIFFERENT ==*/
+
+/*=== Scroll To Top ===*/
+.scroll_top {
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    text-align: center;
+    margin: auto;
+    transition:all ease .5s;
+    z-index: 9;
+    opacity: 0;
+    background: $base-hover-background;
+    border-radius: 5px;
+    transform: scale(0);
+    a{
+       color: $color-white !important;
+       display: block;
+       position: absolute;
+       top: 47%;
+       left: 0;
+       right: 0;
+       bottom: 0;
+       width: auto;
+       height: auto;
+       transform: translateY(-50%);
+       & .fas{
+       	font-size: 25px;
+       }
+    }
+    &.fixed{
+        opacity: 1;
+        transform: scale(1) rotate(360deg);
+    }
+    &:hover{
+        opacity:.8;
+        cursor:pointer;
+    }
+}
+/*=== End Scroll To Top ===*/

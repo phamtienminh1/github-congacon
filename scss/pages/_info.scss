@@ -1,0 +1,102 @@
+/*== Infomation ==*/
+.infomation_main {
+    height:835px;
+    position:relative;
+    overflow:hidden;
+    .container{
+        position:relative;
+        padding: 38px 15px 0;
+        height: 100%;
+        .icon_round{
+            height: 700px;
+            top: 55px;
+        }
+        .title_home h3{
+            font-size: 48px;
+            line-height: 50px;
+        }
+    }
+    .owl-theme .owl-dots .owl-dot span{
+    	background:$color-white;
+    }
+    .owl-theme .owl-dots .owl-dot.active span,& .owl-theme .owl-dots .owl-dot:hover span {
+	    background: $base-hover-background-2;
+	}
+}
+#sync2_info {
+    padding: 0 0 0 240px;
+}
+.sync2_info_img {
+    width: 230px;
+    height: 230px;
+    margin: auto;
+    img{
+    	height: 100%;
+    	object-fit:scale_down;
+    }
+}
+.bg_info{
+    content:"";
+    background:$bg-color-black url(../images/bg_infomation.png) center no-repeat;
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    z-index: -1;
+    top:0;
+}
+/*== End Infomation ==*/
+
+/*== Info Details ==*/
+.info_details_main {
+    font-size: 14px;
+    line-height: 26px;
+    color:$color-white;
+    max-width: 750px;
+    margin: auto;
+    .tilte_page {
+        padding: 22px 0 39px;
+    }
+}
+.info_box_img {
+    height: 666px;
+}
+.owl-info-img{
+    .owl-dots .owl-dot.active span, .owl-dots .owl-dot:hover span {
+        background: $base-hover-color;
+    }
+}
+.info_box_item {
+    padding: 50px 0;
+    color: $color-white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    &_title h2 {
+        font-size: 40px;
+        font-weight: 600;
+        margin: 0 0 30px;
+    }
+    &_short{
+        max-width:500px;
+    }
+}
+/*== End Info Details ==*/
+
+/*== Swipe Info ==*/
+.info_box_main{
+    .swiper-container{
+        height: 100vh;
+    }
+    .swiper-pagination-bullet {
+        background: $color-white;
+        width: 10px;
+        height: 10px;
+    }    
+}
+.footer_bottom_info{
+    position: absolute;
+    bottom: 85px;
+    left: 0;
+    right: 0;
+}
+/*== End Swipe Info ==*/

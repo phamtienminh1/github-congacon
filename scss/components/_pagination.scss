@@ -1,0 +1,31 @@
+/*== Pagination ==*/
+ul.pagination {
+    justify-content: center;
+    padding:30px 0 0;
+    margin:0 0 50px;
+    .page-link {
+	    border: none;
+	    margin: 0 5px;
+	    font-size: 14px;
+	    line-height: 14px;
+	    color: #999999;
+	    background: none;
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+		text-align: center;
+		padding:0;
+	}
+	.page-item.active,& .page-item:hover {
+		.page-link {
+		    background: $base-hover-color;
+		    box-shadow: 0px 3px 4px rgba(156, 39, 176, 0.25);
+		    border-radius: 999px;
+		    color:#fff;
+		}
+	}
+	.page-item:last-child .page-link,& .page-item:first-child .page-link{
+		border-radius: 999px;
+	}
+}
+/*== End Pagination ==*/

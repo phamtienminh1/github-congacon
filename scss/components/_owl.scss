@@ -1,0 +1,42 @@
+/*== OWL ==*/
+.owl-theme .owl-nav [class*=owl-] {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  background: none;
+  width: 20px;
+  height: 40px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50%);
+}
+.owl-prev {
+  left: 0px;
+  img {
+      transform: rotate(180deg);
+  }
+}
+.owl-next {
+  right: 0px;
+}
+.owl-theme .owl-nav [class*=owl-]:hover {
+  opacity: .5;
+  background:none;
+}
+.owl-theme .owl-nav{
+  margin:0;
+}
+.owl-theme .owl-dots .owl-dot span {
+  width: 14px;
+  height: 14px;
+  background: #C4C4C4;
+  display: block;
+  border-radius: 999px;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: $base-hover-background-2;
+}
+/*== End OWL ==*/

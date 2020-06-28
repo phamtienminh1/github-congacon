@@ -1,0 +1,57 @@
+/*== OUR SERVICE ==*/
+.our_service{
+	&_main{
+		.container{
+	        position:relative;
+	        padding:0px 15px 120px;
+	        height: 100%;
+	        .icon_round{
+				top: 0;
+				height: calc(100% - 120px);
+				&:before{
+					top:0;
+				}
+	        }
+	    }
+	    .title_home h3{
+		    font-size: 48px;
+		    line-height: 50px;
+	    }
+	}
+	&_img{
+		&:hover{
+			opacity:.5;
+		}
+		img{
+			cursor:pointer;
+		}
+	}
+	&_content{
+		color:$color-white;
+	    padding: 71px 0 0 180px;
+	    min-width: 300px;
+	    transition: all ease .5s;
+	    opacity: 0;
+	    visibility: hidden;
+	    transform: translateX(100%);
+	    position: absolute;
+	    top: 0;
+	    &.active {
+		    opacity: 1;
+		    visibility: visible;
+		    transform: translateX(0);
+		}
+		h4{
+			font-weight: bold;
+			font-size: 20px;
+			line-height: 24px;
+			margin:0 0 10px;
+		}
+		p{
+			font-weight: 300;
+			font-size: 16px;
+			line-height: 32px;
+		}
+	}
+}
+/*== End OUR SERVICE ==*/

@@ -1,0 +1,35 @@
+/*== Edit By DTM Reponsive ===*/
+$portrait-tablets-min:"(min-width:768px)";
+$desktop:"max-width:1199px";
+$landscape-tablets:"(max-width:1157px)";
+$portrait-tablets:"(max-width:991px)";
+$landscape-mobile-big:"(max-width:767px)";
+$landscape-mobile:"(max-width:480px)";
+$portrait-mobile:"(max-width: 320px)";
+@media only screen and #{$portrait-tablets-min}{
+}
+@media only screen and #{$landscape-tablets}{
+	html {
+	    overflow-x: scroll;
+	    min-width: 1140px;
+	}
+	.header_main{
+	    position: relative;
+	}
+	.slideshow_main {
+	    position: static; 
+	    height: 100%;
+	}
+	.content_main {
+	    position: relative;
+	    top:0;
+	}
+}
+@media only screen and #{$portrait-tablets}{
+}
+@media only screen and #{$landscape-mobile-big}{	
+}
+@media only screen and #{$landscape-mobile}{	
+}
+@media only screen and #{$portrait-mobile}{
+}

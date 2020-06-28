@@ -1,0 +1,35 @@
+/*== Title Home ==*/
+.title_home {
+    & h3 {
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 24px;
+		color: $color-white;
+		margin:0 0 30px;
+	}
+}
+/*== End Title Home ==*/
+
+/*== Title And Description Page ==*/
+.title_products_related {
+    padding: 48px 0;
+    text-align: center;
+    h3 {
+	    font-weight: 500;
+	    font-size: 16px;
+	    line-height: 20px;
+	    color:$color-white;
+	}
+}
+.tilte_page{
+	padding:51px 0;
+	text-align: center;
+	 h1 {
+		font-weight: 900;
+		font-size: 36px;
+		line-height: 44px;
+	    color: $color-white;
+	    text-transform:uppercase;
+	}
+}
+/*== End Title And Description Page ==*/

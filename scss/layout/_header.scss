@@ -1,0 +1,129 @@
+/*== Header ==*/
+.logo_header {
+    width: 68px;
+    height: 50px;
+    margin:0;
+}
+.header_main{
+	background:$bg-color-black;
+	height: 80px;
+	animation: fadeInUp ease .5s;
+	position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 4;
+    &.fixed{
+        background: linear-gradient(180deg, #0e0e0e 0%, rgba(255, 255, 255, 0) 100%);
+	    z-index:9;
+	    animation: fadeInDown ease .5s;
+    }
+}
+.header_inside_main{
+	position:static;
+}
+/*== End Header ==*/
+
+/*=== Menu ===*/
+.menu_main{
+	&_list{
+		li {
+		    display: inline-block;
+		    padding-left: 20px;
+		     a {
+			    font-weight: 600;
+			    font-size: 16px;
+			    line-height: 20px;
+			    color:$color-white;
+			    &:hover{
+			    	color:$base-hover-background-2;
+			    }
+			}
+			&:hover ul.menu_main_list_sub{
+				opacity:1;
+				visibility:visible;
+			}
+		}
+		&_sub {
+		    position: absolute;
+		    top: 52px;
+		    max-width: 250px;
+		    background: $bg-color-black;
+		    min-width: 200px;
+		    transition: all ease .1s;
+		    opacity: 0;
+		    visibility: hidden;
+		    z-index: 5;
+		    li{
+				display: block;
+				margin: 0;
+				padding:0;
+		    	a{
+					display: block;
+					padding: 10px 16px;
+					border-bottom: 1px solid #333;
+					width: 100%;
+					font-weight: 6	00;
+					font-size: 15px;
+					line-height: 17px;
+					color: $color-white;
+					text-transform:capitalize;
+					&:hover {
+					    color: $base-hover-background-2 !important;
+					}
+		    	}
+		    }
+		}
+	}
+}
+/*=== End Menu ===*/
+
+/*== Search ==*/
+.search_main {
+    padding: 0 0 0 20px;
+    position: relative;
+    cursor: pointer;
+    .form_search {
+	    position: absolute;
+	    max-width: 250px;
+	    background:$color-white;
+	    display: flex;
+	    z-index: 3;
+	    left: 0;
+	    top: 52px;
+	    opacity: 0;
+	    visibility: hidden;
+	    input {
+		    background: none;
+		    border: none;
+		    font-size: 14px;
+		    padding: 5px 10px;
+		}
+		button {
+		    border: none;
+		    cursor: pointer;
+		    color: #ddd;
+		    outline: none;
+		}
+		&.active{
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}
+/*== End Search ==*/
+
+/*== Language ==*/
+ul.language_main{
+	li {
+	    display: inline-block;
+	    a {
+		    width: 30px;
+		    height: 20px;
+		    display: block;
+		    margin: 0 0 0 16px;
+		}
+	}
+}
+/*== End Language ==*/
